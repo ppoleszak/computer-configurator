@@ -13,6 +13,7 @@ public class CpuService {
     private final CpuRepository cpuRepository;
 
     public void create(CpuCreateRequest cpuCreateRequest) {
+//        validateCreateCpuRequest(cpuCreateRequest);
         var cpu = CpuEntity.builder()
                 .name(cpuCreateRequest.name())
                 .cores(cpuCreateRequest.cores())
@@ -28,4 +29,13 @@ public class CpuService {
 
         cpuRepository.save(cpu);
     }
+
+//    private void validateCreateCpuRequest(CpuCreateRequest cpuCreateRequest) {
+//        if (cpuRepository.findCpuEntityByName(cpuCreateRequest.name())) {
+//            return;
+//        }
+//    }
+//
+//    public void delete(UUID cpuId) {
+//    }
 }

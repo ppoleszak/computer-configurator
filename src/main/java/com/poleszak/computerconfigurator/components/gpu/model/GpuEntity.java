@@ -1,4 +1,4 @@
-package com.poleszak.computerconfigurator.components.cpu.model;
+package com.poleszak.computerconfigurator.components.gpu.model;
 
 import com.poleszak.computerconfigurator.commons.model.BaseEntity;
 import jakarta.persistence.Column;
@@ -12,32 +12,39 @@ import lombok.experimental.SuperBuilder;
 
 import static jakarta.persistence.EnumType.STRING;
 
-
 @Data
 @Entity
 @SuperBuilder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class CpuEntity extends BaseEntity {
+public class GpuEntity extends BaseEntity {
 
     @Column(nullable = false)
     private String name;
     @Column(nullable = false)
-    private int cores;
-    @Column(nullable = false)
-    private int threads;
-    @Column(nullable = false)
-    private double clockMin;
-    @Column(nullable = false)
-    private double clockMax;
+    private String chip;
     @Column(nullable = false)
     @Enumerated(STRING)
-    private Socket socket;
+    private Bus bus;
     @Column(nullable = false)
-    private int process;
+    private int memorySize;
     @Column(nullable = false)
-    private int l3Cache;
+    @Enumerated(STRING)
+    private MemoryType memoryType;
     @Column(nullable = false)
-    private int tdp;
+    @Enumerated(STRING)
+    private MemoryInterface memoryInterface;
+    @Column(nullable = false)
+    private int gpuClock;
+    @Column(nullable = false)
+    private int memoryClock;
+    @Column(nullable = false)
+    private int shaders;
+    @Column(nullable = false)
+    private int tmus;
+    @Column(nullable = false)
+    private int rops;
+    @Column(nullable = false)
+    private double performance;
 }

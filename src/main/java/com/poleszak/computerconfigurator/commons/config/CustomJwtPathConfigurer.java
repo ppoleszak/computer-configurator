@@ -13,7 +13,7 @@ public class CustomJwtPathConfigurer implements JwtPathConfigurer {
     public void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests()
-                .requestMatchers("/api/v1/cpu/**")
+                .requestMatchers("/api/v1/cpu/**", "/api/v1/gpu/**")
                 .permitAll()
                 .anyRequest()
                 .authenticated();
