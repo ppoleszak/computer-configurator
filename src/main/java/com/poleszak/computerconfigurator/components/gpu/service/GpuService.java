@@ -38,6 +38,15 @@ public class GpuService {
 
     private double calculatePerformance(int shaders, int gpuClock,
                                         int tmus, int memoryClock, int rops) {
-        return (shaders * gpuClock) + (tmus * gpuClock * memoryClock) + (rops * memoryClock);
+        double shadersWeight = 0.4;
+        double gpuClockWeight = 0.15;
+        double tmusWeight = 0.2;
+        double memoryClockWeight = 0.15;
+        double ropsWeight = 0.1;
+
+        return (shaders * shadersWeight) * (gpuClock * gpuClockWeight) +
+                (tmus * tmusWeight) * (gpuClock * gpuClockWeight) +
+                (memoryClock * memoryClockWeight) +
+                (rops * ropsWeight) * (memoryClock * memoryClockWeight);
     }
 }

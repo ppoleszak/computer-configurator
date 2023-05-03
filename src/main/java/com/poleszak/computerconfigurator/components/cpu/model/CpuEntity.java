@@ -40,4 +40,6 @@ public class CpuEntity extends BaseEntity {
     private int l3Cache;
     @Column(nullable = false)
     private int tdp;
+    @Column(nullable = false)
+    private double performance;
 }
