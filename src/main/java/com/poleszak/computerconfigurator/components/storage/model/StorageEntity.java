@@ -14,5 +14,5 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class StorageModel extends BaseEntity {
+public class StorageEntity extends BaseEntity {
 }
