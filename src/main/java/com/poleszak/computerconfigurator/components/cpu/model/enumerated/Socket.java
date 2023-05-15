@@ -1,4 +1,4 @@
-package com.poleszak.computerconfigurator.components.cpu.model;
+package com.poleszak.computerconfigurator.components.cpu.model.enumerated;
 
 public enum Socket {
     SOCKET_AM4,

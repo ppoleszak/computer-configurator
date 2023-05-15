@@ -1,8 +1,8 @@
 package com.poleszak.computerconfigurator.components.gpu.controller.request;
 
-import com.poleszak.computerconfigurator.components.gpu.model.Bus;
-import com.poleszak.computerconfigurator.components.gpu.model.MemoryInterface;
-import com.poleszak.computerconfigurator.components.gpu.model.MemoryType;
+import com.poleszak.computerconfigurator.components.gpu.model.enumerated.Bus;
+import com.poleszak.computerconfigurator.components.gpu.model.enumerated.MemoryInterface;
+import com.poleszak.computerconfigurator.components.gpu.model.enumerated.MemoryType;
 import org.springframework.lang.NonNull;
 
 import java.time.LocalDateTime;

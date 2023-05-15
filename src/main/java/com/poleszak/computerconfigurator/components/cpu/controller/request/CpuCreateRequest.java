@@ -1,6 +1,6 @@
 package com.poleszak.computerconfigurator.components.cpu.controller.request;
 
-import com.poleszak.computerconfigurator.components.cpu.model.Socket;
+import com.poleszak.computerconfigurator.components.cpu.model.enumerated.Socket;
 import org.springframework.lang.NonNull;
 
 import java.time.LocalDateTime;

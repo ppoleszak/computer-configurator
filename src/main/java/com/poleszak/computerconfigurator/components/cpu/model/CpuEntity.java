@@ -1,6 +1,7 @@
 package com.poleszak.computerconfigurator.components.cpu.model;
 
 import com.poleszak.computerconfigurator.commons.model.BaseEntity;
+import com.poleszak.computerconfigurator.components.cpu.model.enumerated.Socket;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;

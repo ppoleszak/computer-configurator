@@ -1,4 +1,4 @@
-package com.poleszak.computerconfigurator.components.gpu.model;
+package com.poleszak.computerconfigurator.components.gpu.model.enumerated;
 
 public enum MemoryInterface {
     BIT_192,

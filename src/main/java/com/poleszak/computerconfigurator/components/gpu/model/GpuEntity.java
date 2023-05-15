@@ -1,6 +1,9 @@
 package com.poleszak.computerconfigurator.components.gpu.model;
 
 import com.poleszak.computerconfigurator.commons.model.BaseEntity;
+import com.poleszak.computerconfigurator.components.gpu.model.enumerated.Bus;
+import com.poleszak.computerconfigurator.components.gpu.model.enumerated.MemoryInterface;
+import com.poleszak.computerconfigurator.components.gpu.model.enumerated.MemoryType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
