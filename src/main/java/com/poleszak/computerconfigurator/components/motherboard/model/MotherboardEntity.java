@@ -24,5 +24,40 @@ public class MotherboardEntity extends BaseEntity {
     private String name;
     @Column(nullable = false)
     @Enumerated(STRING)
-    private RamType ramType;
+    private SupportedProcessorFamily supportedProcessorFamily;
+    @Column(nullable = false)
+    @Enumerated(STRING)
+    private SocketType socketType;
+    @Column(nullable = false)
+    private String chipset;
+    @Column(nullable = false)
+    @Enumerated(STRING)
+    private ProcessorArchitecture processorArchitecture;
+    @Column(nullable = false)
+    private MemoryType supportedMemoryTypes;
+    @Column(nullable = false)
+    private Integer memoryBanks;
+    @Column(nullable = false)
+    private Integer maxRamSize;
+    @Column(nullable = false)
+    @Enumerated(STRING)
+    private MemoryArchitecture memoryArchitecture;
+    @Column(nullable = false)
+    @Enumerated(STRING)
+    private RaidSupport raidSupport;
+    @Column(nullable = false)
+    private Boolean multiGraphicsCardSupport;
+    @Column(nullable = false)
+    private Boolean onboardGraphicsSupport;
+    @Column(nullable = false)
+    private String audioChipset;
+    @Column(nullable = false)
+    private Boolean wirelessConnectivity;
+    @Column(nullable = false)
+    @Enumerated(STRING)
+    private Format format;
+    @Column(nullable = false)
+    private Integer width;
+    @Column(nullable = false)
+    private Integer height;
 }

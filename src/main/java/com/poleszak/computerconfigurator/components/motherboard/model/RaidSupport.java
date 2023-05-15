@@ -1,7 +1,8 @@
 package com.poleszak.computerconfigurator.components.motherboard.model;
 
-public enum RamType {
+public enum RaidSupport {
 
-    DDR4,
-    DDR5
+    RAID_0,
+    RAID_1,
+    RAID_10
 }
