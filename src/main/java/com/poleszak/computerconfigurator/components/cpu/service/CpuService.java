@@ -13,7 +13,6 @@ public class CpuService {
     private final CpuRepository cpuRepository;
 
     public void create(CpuCreateRequest cpuCreateRequest) {
-//        validateCreateCpuRequest(cpuCreateRequest);
         var cpu = CpuEntity.builder()
                 .name(cpuCreateRequest.name())
                 .cores(cpuCreateRequest.cores())

@@ -15,7 +15,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class RamModel extends BaseEntity {
+public class RamEntity extends BaseEntity {
 
     @Column(nullable = false)
     private String name;
