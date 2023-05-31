@@ -19,7 +19,7 @@ public class MotherboardService {
                 .socketType(motherboardCreateRequest.socketType())
                 .chipset(motherboardCreateRequest.chipset())
                 .processorArchitecture(motherboardCreateRequest.processorArchitecture())
-                .supportedMemoryTypes(motherboardCreateRequest.supportedMemoryTypes())
+                .memoryType(motherboardCreateRequest.memoryType())
                 .memoryBanks(motherboardCreateRequest.memoryBanks())
                 .maxRamSize(motherboardCreateRequest.maxRamSize())
                 .memoryArchitecture(motherboardCreateRequest.memoryArchitecture())
@@ -31,6 +31,7 @@ public class MotherboardService {
                 .format(motherboardCreateRequest.format())
                 .width(motherboardCreateRequest.width())
                 .height(motherboardCreateRequest.height())
+                .released(motherboardCreateRequest.released())
                 .build();
 
         motherboardRepository.save(motherboard);

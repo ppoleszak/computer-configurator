@@ -35,7 +35,7 @@ public class MotherboardEntity extends BaseEntity {
     @Enumerated(STRING)
     private ProcessorArchitecture processorArchitecture;
     @Column(nullable = false)
-    private MemoryType supportedMemoryTypes;
+    private MemoryType memoryType;
     @Column(nullable = false)
     private Integer memoryBanks;
     @Column(nullable = false)

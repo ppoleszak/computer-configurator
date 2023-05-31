@@ -3,13 +3,15 @@ package com.poleszak.computerconfigurator.components.motherboard.controller.requ
 import com.poleszak.computerconfigurator.components.motherboard.model.enumerated.*;
 import org.springframework.lang.NonNull;
 
+import java.time.LocalDateTime;
+
 public record MotherboardCreateRequest(
         @NonNull String name,
         @NonNull SupportedProcessorFamily supportedProcessorFamily,
         @NonNull SocketType socketType,
         @NonNull String chipset,
         @NonNull ProcessorArchitecture processorArchitecture,
-        @NonNull MemoryType supportedMemoryTypes,
+        @NonNull MemoryType memoryType,
         @NonNull Integer memoryBanks,
         @NonNull Integer maxRamSize,
         @NonNull MemoryArchitecture memoryArchitecture,
@@ -20,5 +22,6 @@ public record MotherboardCreateRequest(
         @NonNull Boolean wirelessConnectivity,
         @NonNull Format format,
         @NonNull Integer width,
-        @NonNull Integer height
+        @NonNull Integer height,
+        @NonNull LocalDateTime released
 ) {}
