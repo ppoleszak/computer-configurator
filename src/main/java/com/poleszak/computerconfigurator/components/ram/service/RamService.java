@@ -32,8 +32,22 @@ public class RamService {
                 .color(ramCreateRequest.color())
                 .warranty(ramCreateRequest.warranty())
                 .released(ramCreateRequest.released())
+                .performance(calculateRamPerformance(
+                        ramCreateRequest.totalCapacity(),
+                        ramCreateRequest.clockSpeed(),
+                        ramCreateRequest.latency()))
                 .build();
 
         ramRepository.save(ramEntity);
+    }
+
+    private double calculateRamPerformance(int totalCapacity, int clockSpeed, int latency) {
+        double totalCapacityWeight = 0.4;
+        double clockSpeedWeight = 0.4;
+        double latencyWeight = 0.2;
+
+        return (totalCapacity * totalCapacityWeight) +
+                (clockSpeed * clockSpeedWeight) +
+                ((1.0 - (latency / 100.0)) * latencyWeight);
     }
 }

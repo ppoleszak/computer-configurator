@@ -15,7 +15,7 @@ public class MotherboardService {
     public void create(MotherboardCreateRequest motherboardCreateRequest) {
         var motherboard = MotherboardEntity.builder()
                 .name(motherboardCreateRequest.name())
-                .supportedProcessorFamily(motherboardCreateRequest.supportedProcessorFamily())
+                .processorFamilyType(motherboardCreateRequest.processorFamilyType())
                 .socketType(motherboardCreateRequest.socketType())
                 .chipset(motherboardCreateRequest.chipset())
                 .processorArchitecture(motherboardCreateRequest.processorArchitecture())

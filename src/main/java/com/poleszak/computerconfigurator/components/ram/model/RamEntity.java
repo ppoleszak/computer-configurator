@@ -24,22 +24,40 @@ public class RamEntity extends BaseEntity {
 
     @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
     private String productCode;
+    @Column(nullable = false)
     private String series;
+    @Column(nullable = false)
     @Enumerated(STRING)
     private MemoryType memoryType;
+    @Column(nullable = false)
     private int totalCapacity;
+    @Column(nullable = false)
     private int moduleCapacity;
+    @Column(nullable = false)
     private int numberOfModules;
+    @Column(nullable = false)
     private int clockSpeed;
+    @Column(nullable = false)
     private int latency;
+    @Column(nullable = false)
     private String timing;
+    @Column(nullable = false)
     private double voltage;
+    @Column(nullable = false)
     @Enumerated(STRING)
     private CoolingType cooling;
+    @Column(nullable = false)
     private boolean eccMemory;
+    @Column(nullable = false)
     private boolean memoryLighting;
+    @Column(nullable = false)
     private String additionalInformation;
+    @Column(nullable = false)
     private String color;
+    @Column(nullable = false)
     private String warranty;
+    @Column(nullable = false)
+    private double performance;
 }

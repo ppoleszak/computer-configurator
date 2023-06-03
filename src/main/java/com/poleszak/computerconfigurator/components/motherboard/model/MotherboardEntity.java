@@ -25,7 +25,7 @@ public class MotherboardEntity extends BaseEntity {
     private String name;
     @Column(nullable = false)
     @Enumerated(STRING)
-    private SupportedProcessorFamily supportedProcessorFamily;
+    private ProcessorFamilyType processorFamilyType;
     @Column(nullable = false)
     @Enumerated(STRING)
     private SocketType socketType;

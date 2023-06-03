@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 public record MotherboardCreateRequest(
         @NonNull String name,
-        @NonNull SupportedProcessorFamily supportedProcessorFamily,
+        @NonNull ProcessorFamilyType processorFamilyType,
         @NonNull SocketType socketType,
         @NonNull String chipset,
         @NonNull ProcessorArchitecture processorArchitecture,
